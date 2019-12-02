@@ -72,7 +72,6 @@ jobs:
         [ -e .config ] && mv .config openwrt
         chmod +x diy.sh
         cd openwrt
-        ../diy.sh
         make defconfig
 
     - name: Download package
